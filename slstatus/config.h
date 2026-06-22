@@ -66,11 +66,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
     /* function          format        argument */
-    { wifi_essid,        "  %s   ",   "wlp0s20f3" },
-    { run_command,       "  %s   ",   "free -h --si | awk '/^Mem:/ {print $3}'" },
-    { cpu_perc,          "  %s%%  ",  NULL },
-    { run_command,       "  %s%%  ",  "amixer get Master | grep -o '[0-9]*%' | head -1 | tr -d '%'" },
-    { run_command,       "󰃠  %s%%  ",  "brightnessctl -m | cut -d',' -f4 | tr -d '%'" },
-    { battery_perc,      "󰁹  %s%%  ",  "BAT0" },
-    { datetime,          "  %s",      " %d/%m %Y  %H:%M" },
+    {wifi_essid, "  %s   ", "wlp0s20f3"},
+    {run_command, "  %s   ", "free -h --si | awk '/^Mem:/ {print $3}'"},
+    {cpu_perc, "  %s%%  ", NULL},
+    {run_command, "  %s%%  ",
+     "amixer get Master | grep -o '[0-9]*%' | head -1 | tr -d '%'"},
+    {run_command, "󰃠  %s%%  ",
+     "brightnessctl -m | cut -d',' -f4 | tr -d '%'"},
+    {battery_perc, "󰁹  %s%%  ", "BAT0"},
 };
