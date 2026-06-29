@@ -96,34 +96,32 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "black",
-    "red3",
-    "green3",
-    "yellow3",
-    "blue2",
-    "magenta3",
-    "cyan3",
-    "gray90",
+    "#0d0d0d", /* 0: black */
+    "#d27e99", /* 1: red */
+    "#9ab87c", /* 2: green */
+    "#c8aa6d", /* 3: yellow */
+    "#7fb4ca", /* 4: blue */
+    "#957fb8", /* 5: magenta */
+    "#6a9589", /* 6: cyan */
+    "#dcd7ba", /* 7: white */
 
     /* 8 bright colors */
-    "gray50",
-    "red",
-    "green",
-    "yellow",
-    "#5c5cff",
-    "magenta",
-    "cyan",
-    "white",
+    "#2a2a37", /* 8: bright black */
+    "#e46876", /* 9: bright red */
+    "#9ab87c", /* 10: bright green */
+    "#e5c283", /* 11: bright yellow */
+    "#7fb4ca", /* 12: bright blue */
+    "#938aa9", /* 13: bright magenta */
+    "#7aa89f", /* 14: bright cyan */
+    "#c8c093", /* 15: bright white */
 
     [255] = 0,
 
-    /* more colors can be added after 255 to use with DefaultXX */
-    "#cccccc",
-    "#555555",
-    "gray90", /* default foreground colour */
-    "black",  /* default background colour */
+    "#c8aa6d", /* 256: cursor bg  */
+    "#0d0d0d", /* 257: cursor fg  */
+    "#dcd7ba", /* 258: defaultfg  */
+    "#0d0d0d", /* 259: defaultbg  */
 };
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
