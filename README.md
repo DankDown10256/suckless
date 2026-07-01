@@ -13,6 +13,7 @@ Patched and configured builds of suckless tools.
 
 **st**
 - alpha (transparency)
+- scrollback (go back to further text up in the terminal)
 
 ## Install
 
